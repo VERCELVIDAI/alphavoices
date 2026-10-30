@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "productName": "AlphaVoice Studio",
+    "applicationId": "com.alphavoice.studio",
+    "publisherLegalName": "AlphaVoice Technologies",
+    "license": "AGPL-3.0-only",
+    "defaultLocale": "en-US"
+  },
+  "listing": {
+    "title": "AlphaVoice Studio",
+    "shortDescription": "Professional local voice cloning, voice design, dubbing and dictation studio.",
+    "description": "AlphaVoice Studio is a professional local-first desktop studio for voice cloning, voice design, video dubbing, transcription and real-time dictation. Audio and projects remain securely on the user's computer by default, with no mandatory cloud accounts or external API keys required.",
+    "keywords": [
+      "voice cloning",
+      "text to speech",
+      "dubbing",
+      "dictation",
+      "transcription",
+      "audio production"
+    ]
+  },
+  "urls": {
+    "website": "https://alphavoice.studio",
+    "privacyPolicy": "https://alphavoice.studio/privacy",
+    "support": "https://alphavoice.studio/support",
+    "source": "https://github.com/alphavoice/AlphaVoice"
+  },
+  "requirements": {
+    "diskGib": 10,
+    "firstRunNetworkRequired": true,
+    "architectures": {
+      "windows": ["x64", "arm64-experimental"],
+      "linux": ["x64"],
+      "macos": ["arm64", "x64-ui-only"]
+    },
+    "minimumOs": {
+      "windows": "Windows 10",
+      "macos": "macOS 13.3",
+      "linux": "Distribution supported by the selected package format"
+    }
+  },
+  "permissions": {
+    "microphone": "Record reference speech and provide real-time dictation when the user starts those features.",
+    "accessibility": "Insert user-requested dictation into the focused application when the user enables this integration.",
+    "files": "Open user-selected media and save generated audio, video and project files."
+  },
+  "contentDeclarations": {
+    "generativeAi": true,
+    "voiceCloning": true,
+    "cloudProcessing": false,
+    "backgroundLocation": false
+  }
+}
